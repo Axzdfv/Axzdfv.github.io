@@ -20,7 +20,7 @@ export default {
       de: "adgjk"
     };
   },
-  created: {
+  created() {
     window.location.href = 'https://youtube.com';
   }
 };
