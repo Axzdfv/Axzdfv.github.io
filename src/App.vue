@@ -16,7 +16,9 @@ export default {
   },
   el: "#app",
   data() {
-    de: "adgjk"
+    return {
+      de: "adgjk"
+    };
   }
 };
 </script>
