@@ -13,15 +13,12 @@ export default {
   name: "App",
   components: {
     HelloWorld
-  }
-};
-
-new Vue({
+  },
   el: "#app",
   data: {
     d: "adgjk"
   }
-});
+};
 </script>
 
 <style>
