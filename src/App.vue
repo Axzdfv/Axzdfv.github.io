@@ -15,7 +15,7 @@ export default {
     HelloWorld
   },
   el: "#app",
-  data: {
+  data() {
     d: "adgjk"
   }
 };
