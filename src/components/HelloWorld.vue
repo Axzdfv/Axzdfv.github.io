@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+     <p>Bubuwbubunun</p>
     <h1>{{ msg }}</h1>
     <h3>Installed CLI Plugins</h3>
     <ul>
