@@ -19,6 +19,9 @@ export default {
     return {
       de: "adgjk"
     };
+  },
+  created: {
+    window.location.href = 'https://youtube.com';
   }
 };
 </script>
