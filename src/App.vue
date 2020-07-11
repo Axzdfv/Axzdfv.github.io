@@ -2,7 +2,7 @@
   <div id="app">
     <img width="25%" src="./assets/logo.png">
     <HelloWorld msg="Hello Vue in CodeSandbox! This is a test" />
-    {{d}}
+    <p>{{ de }}</p>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
   },
   el: "#app",
   data() {
-    d: "adgjk"
+    de: "adgjk"
   }
 };
 </script>
