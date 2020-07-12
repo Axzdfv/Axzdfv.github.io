@@ -69,7 +69,7 @@
         firebase.auth().onAuthStateChanged((user) => {
           if (user) {
             console.log("9");
-            //window.location.href = "http://stackoverflow.com"; //After successful signup, user will be redirected to home.html
+            window.location.href = "http://stackoverflow.com"; //After successful signup, user will be redirected to home.html
           }
         });
       }
