@@ -63,7 +63,7 @@
             } else {
               //console.log(errorMessage);
             }
-            this.message=error.message;
+            this.message=errorMessage;
             // [END_EXCLUDE]
           });
         //window.location.replace("http://stackoverflow.com");
