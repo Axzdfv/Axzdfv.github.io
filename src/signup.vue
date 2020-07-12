@@ -2,7 +2,6 @@
 <div id="app">
   <form>
     <label for="username">Username:</label>
-  <!--<label for="password">Password:</label>-->
     <input id="username" placeholder="754" type="text" v-model="username"/><br>
     <label for="password">Password:</label>
     <input id="password" type="text" v-model="password"></input><br>
