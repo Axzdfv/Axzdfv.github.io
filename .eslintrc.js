@@ -3,6 +3,9 @@ module.exports = {
  "parserOptions": {
     "parser": false,
     ecmaVersion: 2020,
+    "ecmaFeatures": {
+        "jsx": true
+     },
     "sourceType": "module"
   },
  rules: {
