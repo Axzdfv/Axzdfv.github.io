@@ -1,7 +1,7 @@
 module.exports = {
  "parser": "vue-eslint-parser",
  "parserOptions": {
-    "parser": "vue-eslint-parser",
+    "parser": false,
     "sourceType": "module"
   },
  rules: {
