@@ -10,7 +10,7 @@
 <script>
 import HelloWorld from "./components/HelloWorld";
 
-var foo = {
+export default {
   name: "App",
   components: {
     HelloWorld
@@ -20,13 +20,8 @@ var foo = {
     return {
       de: "adgjk"
     };
-  },
-  created() {
-    window.location.href = 'https://youtube.com';
   }
 };
-
-export default foo;
 </script>
 /* eslint-enable */
 <style>
