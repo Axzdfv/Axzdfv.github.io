@@ -10,7 +10,7 @@
 <script>
 import HelloWorld from "./components/HelloWorld";
 
-export default {
+const foo = () => {
   name: "App",
   components: {
     HelloWorld
@@ -25,6 +25,8 @@ export default {
     window.location.href = 'https://youtube.com';
   }
 };
+
+export default foo;
 </script>
 
 <style>
