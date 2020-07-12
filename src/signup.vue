@@ -3,9 +3,9 @@
 <div id="app">
   <form>
     <label for="username">Username:</label>
-    <input id="username" placeholder="754" type="text" v-model="username"/><br>
+    <input id="username" placeholder="754" type="text" v-model="username"/><br />
     <label for="password">Password:</label>
-    <input id="password" type="text" v-model="password"></input><br>
+    <input id="password" type="text" v-model="password"></input><br />
     {{message}}
     <button v-on:click="signUp">Sign Up</button>
   </form>
