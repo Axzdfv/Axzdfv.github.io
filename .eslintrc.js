@@ -1,4 +1,5 @@
 module.exports = {
+ "extends" : [" plugin: vue/base "],
  "parserOptions": {
   "ecmaVersion": 6,
   "ecmaFeatures": {
