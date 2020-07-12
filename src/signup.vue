@@ -36,6 +36,8 @@
       message: "testing 123"
     };
   },
+  methods:{
+    signUp(){
         if (firebase.auth().currentUser) {
         // [START signout]
         firebase.auth().signOut();
