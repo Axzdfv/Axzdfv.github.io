@@ -13,8 +13,8 @@
 </template>
 
 <script>
-  var firebase = require("firebase/app");
-  require("firebase/auth");
+  import * as firebase from "firebase/app";
+  import "firebase/auth";
   
   export default{
     name: "signup",
