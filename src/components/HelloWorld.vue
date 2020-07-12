@@ -1,3 +1,4 @@
+<>
 <template>
   <div class="hello">
      <p>Bubuwbubunun</p>
@@ -88,3 +89,4 @@ a {
   color: #42b983;
 }
 </style>
+</>
