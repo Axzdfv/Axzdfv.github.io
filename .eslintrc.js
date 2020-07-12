@@ -1,9 +1,8 @@
 module.exports = {
- "extends" : [" plugin: vue/base "],
+ "extends" : ['plugin:vue/vue3-recommended'],
  "parserOptions": {
-  "ecmaVersion": 6,
-  "ecmaFeatures": {
-    "experimentalObjectRestSpread": true
+    "parser": "vue-eslint-parser",
+    "sourceType": "module"
   }
 },
  rules: {
