@@ -6,11 +6,11 @@
     <p>{{ de }}</p>
   </div>
 </template>
-/*eslint-disable */
+/* eslint-disable */
 <script>
 import HelloWorld from "./components/HelloWorld";
 
-const foo = () => {
+var foo = {
   name: "App",
   components: {
     HelloWorld
@@ -28,7 +28,7 @@ const foo = () => {
 
 export default foo;
 </script>
-/*eslint-enable */
+/* eslint-enable */
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
