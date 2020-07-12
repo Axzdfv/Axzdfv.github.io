@@ -1,3 +1,4 @@
+<>
 <template>
 <div id="app">
   <form>
@@ -6,7 +7,7 @@
     <label for="password">Password:</label>
     <input id="password" type="text" v-model="password"></input><br>
     {{message}}
-    <button @click="signUp">Sign Up</button>
+    <button v-on:click="signUp">Sign Up</button>
   </form>
 </div>
 </template>
@@ -80,3 +81,4 @@
   }
   
 </script>
+</>
