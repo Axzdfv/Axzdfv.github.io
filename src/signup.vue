@@ -38,6 +38,7 @@
   },
   methods:{
     signUp(){
+      firebase.initializeApp(this.firebaseConfig);
         if (firebase.auth().currentUser) {
         // [START signout]
         firebase.auth().signOut();
@@ -77,6 +78,6 @@
       }
     }
   }
-});
   }
+  
 </script>
