@@ -2,6 +2,7 @@ module.exports = {
  "parser": "vue-eslint-parser",
  "parserOptions": {
     "parser": false,
+    ecmaVersion: 2020,
     "sourceType": "module"
   },
  rules: {
