@@ -6,7 +6,7 @@
     <p>{{ de }}</p>
   </div>
 </template>
-/* eslint-disable */
+
 <script>
 import HelloWorld from "./components/HelloWorld";
 
@@ -23,7 +23,7 @@ export default {
   }
 };
 </script>
-/* eslint-enable */
+
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
