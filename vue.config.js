@@ -12,7 +12,7 @@ module.exports = {
       // entry for the page
       entry: 'src/signup.js',
       // the source template
-      template: 'public/index.html',
+      template: 'public/signup.html',
       // output as dist/index.html
       filename: 'signup.html'
     }
