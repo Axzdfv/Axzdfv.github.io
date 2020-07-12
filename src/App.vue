@@ -1,3 +1,4 @@
+<>
 <template>
   <div id="app">
     <img width="25%" src="./assets/logo.png" />
@@ -5,7 +6,7 @@
     <p>{{ de }}</p>
   </div>
 </template>
-<>
+
 <script>
 import HelloWorld from "./components/HelloWorld";
 
@@ -25,7 +26,7 @@ export default {
   }
 };
 </script>
-</>
+
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -36,3 +37,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+</>
