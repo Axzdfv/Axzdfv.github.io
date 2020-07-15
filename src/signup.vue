@@ -1,4 +1,4 @@
-<>
+
 <template>
 <div id="app">
     <label for="username">Username:</label>
@@ -79,4 +79,3 @@
   }
   
 </script>
-</>
