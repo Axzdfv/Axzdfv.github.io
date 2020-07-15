@@ -6,7 +6,7 @@
     <label for="password">Password:</label>
     <input id="password" type="text" v-model="password"></input><br />
     {{message}}
-    <button v-on:click="signUp">Sign Up</button>
+    <button @click="signUp">Sign Up</button>
 </div>
 </template>
 
@@ -47,7 +47,7 @@
           .auth()
           .createUserWithEmailAndPassword(this.username, this.password)
           .then(function () {
-            console.log("986");
+            this.message="986";
             a();
             // window.location.href("http://stackoverflow.com");
           })
