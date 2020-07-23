@@ -15,6 +15,11 @@ module.exports = {
       template: 'public/index.html',
       // output as dist/index.html
       filename: 'signup.html'
+    },
+    signin: {
+      entry: 'src/signin.js',
+      template: 'public/index.html',
+      filename: 'signin.html'
     }
   }
 }
