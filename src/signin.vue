@@ -29,7 +29,7 @@ export default {
     username: "",
     password: "",
     message: "w"
-  } 
+  },
   created: function () {
     firebase.initializeApp(this.firebaseConfig);
     if (firebase.auth().currentUser) {
