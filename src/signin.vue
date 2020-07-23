@@ -10,6 +10,8 @@
 </template>
 
 <script>
+  import * as firebase from "firebase/app";
+  import "firebase/auth";
 export default {
   name: "signin",
   el: "#app",
@@ -27,7 +29,7 @@ export default {
     username: "",
     password: "",
     message: "w"
-  },
+  } 
   created: function () {
     firebase.initializeApp(this.firebaseConfig);
     if (firebase.auth().currentUser) {
