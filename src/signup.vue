@@ -15,7 +15,6 @@
   import "firebase/auth";
   
   export default{
-new Vue({
   name: "signup",
   el: "#app",
   data() {
@@ -65,7 +64,6 @@ new Vue({
         });
     }
   }
-});
   }
   
 </script>
