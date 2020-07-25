@@ -45,12 +45,11 @@ export default {
         .auth()
         .signInWithEmailAndPassword(self.username, self.password)
         .then(function () {
-          if (firebase.auth().currentUser) {
-            console.log("asgj");
-            self.message = "Login successful!";
-          } else {
-            console.log("zzzz");
-          }
+          firebase.auth().onAuthStateChanged(user => {
+            if(user) {
+              self.message = 'Login Success';
+            }
+          });
         })
         .catch(function (error) {
           // Handle Errors here.
