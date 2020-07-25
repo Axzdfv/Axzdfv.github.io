@@ -28,7 +28,8 @@ export default {
     },
     username: "",
     password: "",
-    message: "w"
+    message: "w",
+    id: ""
   },
   created: function () {
     firebase.initializeApp(this.firebaseConfig);
@@ -45,11 +46,14 @@ export default {
         .auth()
         .signInWithEmailAndPassword(self.username, self.password)
         .then(function () {
-          firebase.auth().onAuthStateChanged(user => {
-            if(user) {
-              self.message = 'Login Success';
-            }
-          });
+          if (firebase.auth().currentUser) {
+            console.log("asgj");
+            self.message = "Login successful!";
+            self.id = firebase.auth().currentUser.uid;
+            self.addUser(self.id);
+          } else {
+            console.log("zzzz");
+          }
         })
         .catch(function (error) {
           // Handle Errors here.
