@@ -20,6 +20,11 @@ module.exports = {
       entry: 'src/signin.js',
       template: 'public/index.html',
       filename: 'signin.html'
+    },
+    eventCreator: {
+      entry: 'src/signin.js',
+      template: 'public/eventCreator.html',
+      filename: 'eventCreator.html'
     }
   }
 }
