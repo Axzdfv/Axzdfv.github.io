@@ -1,5 +1,4 @@
 <template>
-<input type="search" id="addrPicker" placeholder="Start Searching..." />
 <div id="eventCreator">
   <br/>
   <label for="desc">Event Description:</label>
