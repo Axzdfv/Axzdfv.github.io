@@ -4,5 +4,5 @@ import eventCreator from "./eventCreator.vue";
 Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(signin)
+  render: h => h(eventCreator)
 }).$mount("#eventCreator");
