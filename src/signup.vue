@@ -13,6 +13,7 @@
 <script>
   import * as firebase from "firebase/app";
   import "firebase/auth";
+  import "firebase/firestore";
   
   export default{
   name: "signup",
@@ -31,7 +32,8 @@
     },
     username: "",
     password: "",
-    message: ""
+    message: "",
+    id:""
     }
   },
   created: function () {
@@ -52,6 +54,8 @@
           if (firebase.auth().currentUser){
             console.log("Signup successful!");
             self.message = "Signup successful!";
+            self.id = firebase.auth().currentUser.uid;
+            self.addUser(self.id);
           } else {
             console.log("???");
           }
@@ -62,8 +66,26 @@
           self.message = errorMessage;
           console.log(errorMessage);
         });
-    }
-  }
+     },
+     addUser(id){
+       var self=this;
+      this.db.collection("users")
+        .doc(id).set({
+          first: "Anne",
+          last: "Onymous",
+          born: 1999,
+          test: "zxc",
+          email: self.username,
+          events: []
+        })
+        .then(function (docRef) {
+          console.log("Document written with ID: ", docRef.id);
+        })
+        .catch(function (error) {
+          console.error("Error adding document: ", error);
+        });
+     }
+   }
   }
   
 </script>
