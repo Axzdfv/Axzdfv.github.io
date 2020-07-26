@@ -22,7 +22,7 @@ module.exports = {
       filename: 'signin.html'
     },
     eventCreator: {
-      entry: 'src/signin.js',
+      entry: 'src/eventCreator.js',
       template: 'public/eventCreator.html',
       filename: 'eventCreator.html'
     }
