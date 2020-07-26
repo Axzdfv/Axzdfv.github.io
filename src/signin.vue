@@ -56,7 +56,6 @@ export default {
             console.log("asgj");
             self.message = "Login successful!";
             self.id = firebase.auth().currentUser.uid;
-            self.addUser(self.id);
           } else {
             console.log("zzzz");
           }
@@ -68,22 +67,6 @@ export default {
           self.message = errorMessage;
           console.log(errorMessage);
           // ...
-        });
-    },
-    addUser(id) {
-      var self=this;
-      this.db.collection("users")
-        .doc(id).set({
-          first: "Anne",
-          last: "Onymous",
-          born: 1999,
-          test: "zxc"
-        })
-        .then(function (docRef) {
-          console.log("Document written with ID: ", docRef.id);
-        })
-        .catch(function (error) {
-          console.error("Error adding document: ", error);
         });
     }
   }
