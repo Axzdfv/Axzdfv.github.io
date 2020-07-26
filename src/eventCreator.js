@@ -1,8 +1,8 @@
 import Vue from "vue";
-import eventCreator from "./eventCreator.vue";
+import eventcreator from "./eventCreator.vue";
 
 Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(eventCreator)
+  render: h => h(eventcreator)
 }).$mount("#eventCreator");
