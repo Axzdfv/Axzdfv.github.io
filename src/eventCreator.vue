@@ -19,7 +19,7 @@
   import "firebase/auth";
   import "firebase/firestore";
   export default{
-    name: "eventCreator",
+    name: "eventcreator",
     el: "#eventCreator",
     data() {
       return {
