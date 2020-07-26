@@ -78,7 +78,8 @@
           born: 1999,
           test: "zxc",
           email: self.username,
-          events: []
+          eventsOwned: [],
+          eventsJoined: []
         })
         .then(function (docRef) {
           console.log("Document written with ID: ", docRef.id);
