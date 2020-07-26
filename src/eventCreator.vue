@@ -123,5 +123,5 @@
     firebase.initializeApp(this.firebaseConfig);
     this.db = firebase.firestore();
   }
-});
+}
 </script>
