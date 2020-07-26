@@ -1,7 +1,4 @@
 <template>
-<component is="script" src="https://api.mqcdn.com/sdk/place-search-js/v1.0.0/place-search.js" />
-<component is="script" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" />
-<component is="style" src="https://api.mqcdn.com/sdk/place-search-js/v1.0.0/place-search.css" />
 <input type="search" id="addrPicker" placeholder="Start Searching..." />
 <div id="eventCreator">
   <br/>
