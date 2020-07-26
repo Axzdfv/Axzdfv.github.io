@@ -1,6 +1,12 @@
-var app = new Vue({
+<script>
+  import * as firebase from "firebase/app";
+  import "firebase/auth";
+  import "firebase/firestore";
+export default {
+  name: 'signin'
   el: "#app",
-  data: {
+  data() {
+    return{
     firebaseConfig: {
       apiKey: "AIzaSyDUqQjUOgvHp0dtaH8zTafyD7MAvlz0vlg",
       authDomain: "rubyaetherrake.firebaseapp.com",
@@ -16,6 +22,7 @@ var app = new Vue({
     message: "w",
     id: "",
     db: null
+    }
   },
   created: function () {
     firebase.initializeApp(this.firebaseConfig);
@@ -55,17 +62,18 @@ var app = new Vue({
       var self=this;
       this.db.collection("users")
         .doc(id).set({
-          first: "Ada",
-          last: "Lovelace",
-          born: 1815,
-          test: "abc"
+          first: "Anne",
+          last: "Onymous",
+          born: 1999,
+          test: "zxc"
         })
         .then(function (docRef) {
-          console.log("Document written with ID: ", docRef);
+          console.log("Document written with ID: ", docRef.id);
         })
         .catch(function (error) {
           console.error("Error adding document: ", error);
         });
     }
   }
-});
+}
+</script>
