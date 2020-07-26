@@ -1,3 +1,15 @@
+<template>
+  <div id="app">
+   <label for="username">Username:</label>
+   <input id="username" placeholder="Enter username here" type="text" v-model="username" /><br />
+   <label for="password">Password:</label>
+   <input id="password" type="text" placeholder="Enter password here" v-model="password"></input><br />
+   {{message}}
+   <button @click="signIn">Sign In</button>
+{{id}}
+ </div>
+</template>
+
 <script>
   import * as firebase from "firebase/app";
   import "firebase/auth";
