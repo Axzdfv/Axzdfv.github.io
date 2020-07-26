@@ -33,11 +33,13 @@
     username: "",
     password: "",
     message: "",
-    id:""
+    id:"",
+    db:""
     }
   },
   created: function () {
     firebase.initializeApp(this.firebaseConfig);
+    this.db = firebase.firestore();
     if (firebase.auth().currentUser){
       this.message = "user already logged in";
     } else {
