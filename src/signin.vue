@@ -15,7 +15,7 @@
   import "firebase/auth";
   import "firebase/firestore";
 export default {
-  name: 'signin'
+  name: 'signin',
   el: "#app",
   data() {
     return{
