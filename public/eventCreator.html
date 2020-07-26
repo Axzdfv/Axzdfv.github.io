@@ -13,7 +13,19 @@
       <strong>We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <input type="search" id="addrPicker" placeholder="Start Searching..." />
-    <div id="eventCreator"></div>
+    <div id="eventCreator">
+  <br/>
+  <label for="desc">Event Description:</label>
+  <input id="desc" type="text" placeholder="event description" v-model="eventDesc"></input>
+<br />
+<label for="name">Event Name:</label>
+  <input id="name" type="text" placeholder="event name" v-model="eventName"></input>
+  <div>Address: {{addr}}</div>
+  <div>Latitude: {{lat}}</div>
+  <div>Longitude: {{lng}}</div>
+  <div>User: {{user}}</div>
+  <button @click="getLatLn">Create Event</button>
+</div>
     <!-- built files will be auto injected -->
     <script src="https://api.mqcdn.com/sdk/place-search-js/v1.0.0/place-search.js" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" />
