@@ -101,7 +101,10 @@
           dscr: self.eventDesc,
           time: "10:40 AM PST",
           name: self.eventName,
-          owner: self.user
+          roles: {
+            owner: [self.user],
+            guests: []
+          }
         })
         .then(function (a) {
           console.log("event added");
