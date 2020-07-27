@@ -75,8 +75,7 @@
         .doc(id).set({
           first: "Anne",
           last: "Onymous",
-          born: 1999,
-          test: "zxc",
+          dispName: "AoniQuilt",
           email: self.username,
           eventsOwned: [],
           eventsJoined: []
