@@ -14,7 +14,7 @@
   import * as firebase from "firebase/app";
   import "firebase/auth";
   import "firebase/firestore";
-  import axios from 'axios'
+  import axios from 'axios';
   import dropin from 'braintree-web-drop-in';
   
   export default {
