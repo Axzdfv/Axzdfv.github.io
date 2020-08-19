@@ -23,7 +23,7 @@
     "execa": "latest",
     "firebase": "latest",
     "axios": "latest",
-    "braintree-web-drop-in", "latest"
+    "braintree-web-drop-in": "latest"
   },
   "eslintConfig": {
     "root": true,
