@@ -15,7 +15,7 @@
   import "firebase/auth";
   import "firebase/firestore";
   import axios from 'axios'
-  var dropin = require('braintree-web-drop-in');
+  import dropin from 'braintree-web-drop-in';
   
   export default {
     name: payui,
