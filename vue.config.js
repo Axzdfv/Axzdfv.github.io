@@ -25,6 +25,11 @@ module.exports = {
       entry: 'src/eventCreator.js',
       template: 'public/eventCreator.html',
       filename: 'eventCreator.html'
+    },
+    payUI: {
+      entry: 'src/payUI.js',
+      template: 'public/index.html',
+      filename: 'payUI.html'
     }
   }
 }
