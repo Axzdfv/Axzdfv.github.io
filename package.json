@@ -21,7 +21,9 @@
     "eslint-plugin-vue": "^6.0.1",
     "vue-template-compiler": "^2.6.11",
     "execa": "latest",
-    "firebase": "latest"
+    "firebase": "latest",
+    "axios": "latest",
+    "braintree-web-drop-in", "latest"
   },
   "eslintConfig": {
     "root": true,
