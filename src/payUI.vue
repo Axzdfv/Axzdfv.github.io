@@ -19,7 +19,7 @@
   
   export default {
     name: payui,
-    el: "#app"
+    el: "#app",
     data(){
       return {
         firebaseConfig: {
