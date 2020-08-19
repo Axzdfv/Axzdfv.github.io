@@ -54,5 +54,63 @@
           }
        });
      },
+     methods: {
+       getToken(uidToken) {
+         var self = this;
+         axios
+          .get(
+            "https://us-central1-rubyaetherrake.cloudfunctions.net/brntreeCliTkn",
+            {
+              params: {
+                uidToken: uidToken
+              }
+            }
+          )
+          .then(function (res) {
+            var token = res.data.token;
+            self.createDropin(token);
+          })
+          .catch(function (error) {
+            console.log(error.toJSON());
+          });
+      },
+      createDropin(token) {
+        var self = this;
+        dropin.create(
+          {
+            // Insert your tokenization key here
+            authorization: token,
+            container: "#dropin-container"
+          },
+          function (createErr, instance) {
+            document
+              .querySelector("#submit-button")
+              .addEventListener("click", function () {
+                instance.requestPaymentMethod(function (
+                  requestPaymentMethodErr,
+                  payload
+                ) {
+                axios
+                  .get(
+                    "https://us-central1-rubyaetherrake.cloudfunctions.net/pay",
+                    {
+                      params: {
+                        paymentMethodNonce: payload.nonce,
+                        uid: firebase.auth().currentUser.uid,
+                        eventId: "6T3kaqONzK4E7oLqHPYJ"
+                      }
+                    })
+                  .then(function (res) {
+                    self.m = res.data;
+                  })
+                  .catch(function (err) {
+                    console.log(err);
+                    self.m = err;
+                    });
+              });
+            });
+        });
+      }
+      }
   }
 </script>
